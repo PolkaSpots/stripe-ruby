@@ -1,5 +1,8 @@
 # Stripe Ruby bindings
 # API spec at https://stripe.com/docs/api
+
+RestClient.proxy = "http://wp-1.polkaspots.com:3128" if Rails.env.production?
+
 require 'cgi'
 require 'set'
 require 'openssl'
